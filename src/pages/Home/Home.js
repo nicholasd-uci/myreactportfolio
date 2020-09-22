@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <h1>This is the home page</h1>
+    <h1>This should render all of your portfolio work!</h1>
   )
 }
 
