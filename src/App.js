@@ -27,7 +27,7 @@ const App = () => {
       {/* recommend by ReactRouter.com to start with the 'Router' tag, followed by a 'div tag'  */}
       <Router>
         <div>
-          <Navbar color="faded" light>
+          <Navbar body inverse style={{ backgroundColor: '#f72585', borderColor: '#333'}} light>
             <NavbarBrand>Nicholas Paul Ruiz Dallas ~ Full Stack Web Developer</NavbarBrand>
             <NavbarToggler onClick={toggleNavbar} className="mr-2" />
             <Collapse isOpen={!collapsed} navbar>

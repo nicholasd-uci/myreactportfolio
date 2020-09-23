@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Jumbotron, Container } from 'reactstrap'
 import {
   Card, Button, CardImg, CardTitle, CardText, CardGroup,
@@ -11,49 +12,57 @@ const Home = () => {
     <>
       <body className="background">
         <div>
-          <Jumbotron fluid>
+          <Jumbotron fluid body inverse style={{ backgroundColor: '#fffffc', borderColor: '#333'}}>
             <Container fluid>
-              <h1 className="display-3">Fluid jumbotron</h1>
+              <div>
+              <img src="#" alt="Photo of me"></img>
+              </div>
               <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
             </Container>
           </Jumbotron>
         </div>
-        <br/><br/><br/>
+        <br/>
         <div>
           {/*  portfolio is going to go here and we will be ale to see our projects along with photo of me  */}
           <CardGroup>
             <Card>
-              <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+              <CardTitle className="title">Nutraprep: Project I</CardTitle>
+              <CardImg top width="100%" src="https://placeimg.com/640/480/nature" alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                <Button>Button</Button>
+                <CardSubtitle>Nutraprep ~Find out what's in your food ~</CardSubtitle>
+                <hr/>
+                <CardText>Nutraprep was an app that a team developed using API request using axios to render information about the food we are eating. We wanted to bring to the user a wide variety of meals to consider when cooking as well.</CardText>
+                <hr/>
+                <Button className="link" href="https://nicholasd-uci.github.io/manhattanProject/" target="_blank" alt="Project 1 link">View Project</Button>
               </CardBody>
             </Card>
+
             <Card>
-              <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+              <CardTitle className="title">TrActivity: Project II</CardTitle>
+              <CardImg top width="100%" src="https://placeimg.com/640/480/arch" alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardSubtitle>TrActivity ~ Track your spending habit ~</CardSubtitle>
+                <hr/>
                 <CardText>This card has supporting text below as a natural lead-in to additional content.</CardText>
-                <Button>Button</Button>
+                <hr/>
+                <Button className="link" href="https://cryptic-savannah-70126.herokuapp.com/" target="_blank" alt="Porject 2 link">View Project</Button>
               </CardBody>
             </Card>
             <Card>
-              <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+              <CardTitle className="title">CodeIn: Project III</CardTitle>
+              <CardImg top width="100%" src="https://placeimg.com/640/480/nature" alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardSubtitle>CodeIn ~ It's as easy as a swipe right ~</CardSubtitle>
+                <hr/>
                 <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                <Button>Button</Button>
+                <hr/>
+                <Button>View Project</Button>
               </CardBody>
             </Card>
           </CardGroup>
         </div>
         <br/><br/><br/>
       </body>
-
     </>
   )
 }
