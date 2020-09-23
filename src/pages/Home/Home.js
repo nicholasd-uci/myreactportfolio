@@ -5,6 +5,9 @@ import {
   Card, Button, CardImg, CardTitle, CardText, CardGroup,
   CardSubtitle, CardBody
 } from 'reactstrap'
+import './Carlo'
+import Caro from './Carlo'
+import Example from './Carlo'
 import './style.css'
 
 const Home = () => {
@@ -12,10 +15,10 @@ const Home = () => {
     <>
       <body className="background">
         <div>
-          <Jumbotron fluid body inverse style={{ backgroundColor: '#fffffc', borderColor: '#333'}}>
+          <Jumbotron className="giphy" fluid body inverse style={{ backgroundColor: '#fffffc', borderColor: '#333'}}>
             <Container fluid>
               <div>
-              <img src="#" alt="Photo of me"></img>
+              <img src={require("./myLogo.png")} alt="Photo of me"></img>
               </div>
               <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
             </Container>
@@ -36,10 +39,9 @@ const Home = () => {
                 <Button className="link" href="https://nicholasd-uci.github.io/manhattanProject/" target="_blank" alt="Project 1 link">View Project</Button>
               </CardBody>
             </Card>
-
             <Card>
               <CardTitle className="title">TrActivity: Project II</CardTitle>
-              <CardImg top width="100%" src="https://placeimg.com/640/480/arch" alt="Card image cap" />
+              <CardImg top width="100%" src={require("./myLogo.png")} alt="Card image cap" />
               <CardBody>
                 <CardSubtitle>TrActivity ~ Track your spending habit ~</CardSubtitle>
                 <hr/>
@@ -61,9 +63,10 @@ const Home = () => {
             </Card>
           </CardGroup>
         </div>
-        <br/><br/><br/>
+        
+        <Caro className="caro"/>
       </body>
-    </>
+    </> 
   )
 }
 

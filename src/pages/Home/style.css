@@ -3,3 +3,13 @@
     background-image: none;
 }
 
+.giphy{
+    background-image: url("https://media.giphy.com/media/xUA7aQWDNhElgR3NUQ/giphy.gif");
+    background-size: cover;
+}
+
+.caro{
+    height: 350%;
+    width: auto;
+}
+

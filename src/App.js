@@ -51,11 +51,9 @@ const App = () => {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
           </Switch>
-
-          <br /><br /><br /><br /><br />
-
         </div>
       </Router>
+      
 {/* This is where the foot needs to be on every page. */}
       <section>
         <footer class="footer">
