@@ -20,7 +20,7 @@ const Home = () => {
               <div>
               <img src={require("./myLogo.png")} alt="Photo of me"></img>
               </div>
-              <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+              <p className="lead">Understanding how to make tomorrow better by living today!</p>
             </Container>
           </Jumbotron>
         </div>
