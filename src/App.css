@@ -1,22 +1,31 @@
 
 .link{
-    color: red
+    color: yellow;
+    font-size: large;
+    font-family: serif;
 }
 
 .link:hover {
-    color: blueviolet
+    color: rgb(253, 253, 253)
 }
 
-/* .title{
-    color: 
-} */
+.nameTag{
+    font-size: 25px !important;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffff33 !important;
+    text-shadow: 2px 2px grey;
+    text-decoration-line: underline;
+    text-decoration-style: initial;
+}
 
 .footer{
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: red;
-        color: white;
+        height: 35px;
+        background-color: #f72585;
+        color: black;
         text-align: center;
+        font-size: large;
 }

@@ -23,8 +23,8 @@ const items = [
     header: 'Slide 3 Header',
     key: '3'
   }
-];
+]
 
-const Caro = () => <UncontrolledCarousel items={items} />;
+const Caro = () => <UncontrolledCarousel items={items} />
 
-export default Caro;
+export default Caro

@@ -24,11 +24,11 @@ const App = () => {
 
   return (
     <>
-      {/* recommend by ReactRouter.com to start with the 'Router' tag, followed by a 'div tag'  */}
+{/* recommend by ReactRouter.com to start with the 'Router' tag, followed by a 'div tag'  */}
       <Router>
         <div>
           <Navbar body inverse style={{ backgroundColor: '#f72585', borderColor: '#333'}} light>
-            <NavbarBrand>Nicholas Paul Ruiz Dallas ~ Full Stack Web Developer</NavbarBrand>
+            <NavbarBrand className="nameTag">Nicholas Paul Ruiz Dallas ~ Full Stack Web Developer</NavbarBrand>
             <NavbarToggler onClick={toggleNavbar} className="mr-2" />
             <Collapse isOpen={!collapsed} navbar>
               <Nav navbar>
@@ -39,32 +39,30 @@ const App = () => {
                   <NavLink> <Link className="link" to="/About">Contact Page</Link></NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink className="link" href="https://github.com/nicholasd-uci">GitHub</NavLink>
+                  <NavLink className="link" href="https://github.com/nicholasd-uci" target="_blank">GitHub</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
-
-          {/* This is a switch elem that define routes for our application- On line 4 its being called  */}
+{/* This is a switch elem that define routes for our application- On line 4 its being called  */}
           <Switch>
-            {/* These are the routs that we will be defining */}
+{/* These are the routs that we will be defining */}
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
           </Switch>
         </div>
       </Router>
-      
 {/* This is where the foot needs to be on every page. */}
       <section>
         <footer class="footer">
           <div class="container">
-            <span class="text-muted"> These test here need to be in the footer</span>
+            <span class="text-muted"> 
+            These test here need to be in the footer
+            </span>
           </div>
         </footer>
       </section>
-
     </>
-
   )
 }
 
